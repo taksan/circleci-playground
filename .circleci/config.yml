@@ -15,15 +15,14 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "Checking sets"
+          name: "ok"
           command: |
             echo "Hey"
-            this should fail
             echo "Good"
           
       - run:
-          name: "Should never run"
-          command: "I hope this won't run" 
+          name: "fine"
+          command: "echo I hope this won't run" 
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
